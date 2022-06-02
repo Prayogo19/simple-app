@@ -6,10 +6,11 @@ export const ButtonContainer  = styled.button`
     text-transform: capitalize;
     font-size: 1.4rem;
     background: transparent;
-    color : var(--mainWhite);
+    color : var(--mainblue);
     &:hover {
         background : var(--lightBlue);
         color : var(--mainBlue);
     }
-    border : none;
+    border : 2px solid;
+    border-radius : 15px;
 `;

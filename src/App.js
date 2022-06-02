@@ -10,6 +10,7 @@ import ProductList from "./component/ProductList";
 import Detail from "./component/Detail";
 import Cart from "./component/Cart";
 import Default from "./component/Default";
+import Modal from "./component/Modal";
 
 function App() {
     return(
@@ -19,8 +20,9 @@ function App() {
           <Route path="/" exact element={<ProductList />} />
           <Route path="/detail" element={<Detail />} />
           <Route path="/cart" element={<Cart />} />
-          <Route component={Default} />
+          <Route element={<Default />} />
         </Routes>
+        <Modal/>
       </React.Fragment>
     );
 }
