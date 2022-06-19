@@ -20,7 +20,7 @@ function App() {
           <Route path="/" exact element={<ProductList />} />
           <Route path="/detail" element={<Detail />} />
           <Route path="/cart" element={<Cart />} />
-          <Route element={<Default />} />
+          <Route path="*" element={<Default />} />
         </Routes>
         <Modal/>
       </React.Fragment>
